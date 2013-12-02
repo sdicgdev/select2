@@ -1598,12 +1598,15 @@ the specific language governing permissions and limitations under the Apache Lic
             }
 
             if (search.val().length < opts.minimumInputLength) {
+                // Removed by Deac to disable the minimum input message
+                /*
                 if (checkFormatter(opts.formatInputTooShort, "formatInputTooShort")) {
                     render("<li class='select2-no-results'>" + opts.formatInputTooShort(search.val(), opts.minimumInputLength) + "</li>");
                 } else {
                     render("");
                 }
                 if (initial && this.showSearch) this.showSearch(true);
+                */
                 return;
             }
 
